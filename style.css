@@ -1,0 +1,36 @@
+:root{
+    --left:hsl(204, 69%, 53%);
+    --right:hsl(241, 73%, 42%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.myContainer{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap: .7rem;
+}
+header{
+    background-image: linear-gradient(var(--left), vari(--right));
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+video{
+    width: 50vw;
+    border-radius: 20px;
+}
